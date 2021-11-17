@@ -36,7 +36,7 @@ def parse_args():
     parser.add_argument('--client-epochs', dest='client_epochs', help='Number local epochs, default = 10', type=int, default=10)
     parser.add_argument('--server-epochs', dest='server_epochs', help='Number of epoch to train the FL model in server, default = 2000', type=int, default=2000)
     
-    parser.add_argument('--partition-data-file', dest='partition_data_file', help='The partition data of clients', type=str, default="")
+    parser.add_argument('--partition-data-file', dest='partition_data_file', help='The partition data of clients', type=str, default="partition_noniid90_nclient300.npy")
     
     return parser.parse_args()
 
